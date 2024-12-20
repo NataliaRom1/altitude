@@ -1,0 +1,62 @@
+@import "./header/header.css";
+@import "./footer/footer.css";
+
+:root {
+    --color-white: #FFFFFF;
+    --color-white-1: #FBFBFB;
+    /*--color-white-2: #FEFEFE;*/
+    --color-black: #191C1C;
+    /*--color-black-1: #383838;*/
+    /*--color-black-2: #000000;*/
+    --color-green: #64CBC4;
+    /*--color-green-hover: #3DA561;*/
+    /*--color-green-bright: #47FF9D;*/
+    /*--color-green-light: #8FFFB633;*/
+    /*--color-green-light-1: #A4E6C3;*/
+    /*--color-grey: #777677;*/
+    /*--color-grey-dark: #303030;*/
+    /*--color-grey-light: #F3F3F3;*/
+    /*--color-yellow: #FDE614;*/
+    /*--color-yellow-1: #E2CE17;*/
+    /*--color-purple: #9747FF;*/
+}
+
+.container {
+    max-width: 1400px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.header {
+    background-color: var(--color-black);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 110px;
+    height: 54px;
+    object-fit: contain;
+}
+
+.header__logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.main {
+    background-color: var(--color-black);
+}
+
+.main__container {
+    display: flex;
+}
