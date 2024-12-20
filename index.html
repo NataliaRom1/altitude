@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="./img/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:opsz,wght@8..144,100..900&display=swap" rel="stylesheet">
 
     <title>Altitude &mdash; металообработка</title>
 </head>
@@ -18,7 +18,7 @@
 <header class="header">
     <div class="container header__container">
         <div class="header__logo"><img src="./img/altitude-logo.svg"/></div>
-        <nav class="main__nav">
+        <nav class="header__nav">
             <ul>
                 <li><a href="#uslugi">Наши услуги</a></li>
                 <li><a href="#process">Процесс работы</a></li>
@@ -35,9 +35,16 @@
             <div>
                 <h1 class="main__header"><span class="green">Altitude</span> — точность и надежность в каждом изделии</h1>
                 <div class="main__desc">Токарные, фрезерные и сварные работы, термообработка и изготовление металлоконструкций под ваши задачи.</div>
-                <a class="button button-white button-slide main__button">Связаться с нами</a>
+                <a class="button button-white button-slide main__button">
+                    <div class="button__circle">
+                        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5.66667 5.66667L1 10.3333" stroke="currentColor" stroke-width="1.55439" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    Связаться с нами</a>
             </div>
             <div class="main__contacts">
+                <div class="main__contacts-title">Наши контакты:</div>
                 <div class="main__contact">
                     <div class="main__iconbox"><img src="./img/email-small.svg"/></div>
                     <div class="main__text">Nfedorov15@yandex.ru</div>
@@ -49,15 +56,10 @@
             </div>
         </div>
         <div class="main__right">
-            <div class="main__circle-1">
-                <div class="main__circle-2">
-                    <div class="main__circle-3">
-                        <div class="main__imgbox">
-                            <img class="main__img" src="./img/main.webp" />
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <img class="main__ellipse main__ellipse-1" src="./img/ellipse-3.svg"/>
+            <img class="main__ellipse main__ellipse-2" src="./img/ellipse-2.svg"/>
+            <img class="main__ellipse main__ellipse-3" src="./img/ellipse-1.svg"/>
+            <img class="main__img" src="./img/main.webp" />
         </div>
     </div>
 </section>
