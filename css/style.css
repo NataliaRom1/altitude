@@ -45,6 +45,7 @@ ul, li {
     align-items: center;
     justify-content: center;
     transition: .3s ease;
+    z-index: 10;
 }
 
 .button-fill-white {
@@ -530,13 +531,12 @@ ul, li {
     /*    width: 66px;*/
     /*    height: 66px;*/
     /*}*/
-
     .uslugi__item-imgbox svg {
         width: 36px;
         height: 36px;
     }
 
-    .uslugi__item:hover .uslugi__item-imgbox svg  {
+    .uslugi__item:hover .uslugi__item-imgbox svg {
         color: var(--color-black-1);
     }
 
