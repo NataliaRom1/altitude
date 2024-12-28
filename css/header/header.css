@@ -1,0 +1,144 @@
+
+.header {
+    background-color: var(--color-black);
+}
+
+.header .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 24px;
+}
+
+.header__logo {
+    width: 110px;
+    height: 54px;
+    object-fit: contain;
+}
+
+.header__logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.header__nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header__nav li a {
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--color-white-1);
+    padding: 5px;
+}
+
+.header__button {
+    max-width: 119px;
+}
+
+.header-mob {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: none;
+    }
+
+    .header-mob {
+        display: flex;
+        background-color: var(--color-black);
+    }
+
+    .header-mob__logo {
+        height: 40px;
+    }
+
+    .header-mob__logo img {
+        height: 40px;
+    }
+
+    .header-mob__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 16px;
+    }
+
+    .header-mob__burger {
+        height: 32px;
+    }
+
+    .header-mob__burger-icon {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        width: 32px;
+        height: 32px;
+    }
+
+    .header-mob__burger-checkbox {
+        display: none;
+    }
+
+    .header-mob__burger-checkbox + .header-mob__burger-icon rect {
+        transition: .2s ease-in-out;
+    }
+
+    .header-mob__burger-checkbox:checked + .header-mob__burger-icon rect:nth-child(3) {
+        transform: rotate(45deg) translate(7px, -9px);
+    }
+
+    .header-mob__burger-checkbox:checked + .header-mob__burger-icon rect:nth-child(2) {
+        transform: rotate(-45deg) translate(-31px, 7px) scaleX(1.57);
+    }
+
+    .header-mob__burger-checkbox:checked + .header-mob__burger-icon rect:nth-child(1) {
+        opacity: 0;
+    }
+
+    .header-mob__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 56px;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        background-color: var(--color-black);
+        transform: translateX(-100%);
+        transition: .3s ease-in-out;
+        width: calc(100% - 32px);
+        height: calc(100vh - 135px);
+        z-index: 10;
+        min-width: 328px;
+        margin: 0;
+        padding: 16px 16px 64px;
+    }
+
+    .header-mob__list {
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    .header-mob__item {
+        margin-bottom: 12px;
+    }
+
+    .header-mob__link {
+        font-family: "Montserrat", serif;
+        color: var(--color-white-1);
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 30px;
+        padding: 8px 0;
+    }
+
+    .header-mob__burger-checkbox:checked ~ .header-mob__menu {
+        transform: translateX(0);
+    }
+}

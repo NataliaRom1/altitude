@@ -30,6 +30,32 @@
         </div>
     </header>
 
+    <header class="header-mob">
+        <div class="container header-mob__container">
+            <div class="header-mob__logo"><img src="./img/altitude-logo.svg"/></div>
+
+            <div class="header-mob__burger">
+                <input type="checkbox" id="toggle-checkbox" class="header-mob__burger-checkbox">
+                <label for="toggle-checkbox" class="header-mob__burger-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect x="18.6667" y="21.6001" width="6.66667" height="2.13333" rx="1.06667" fill="#FBFBFB"/>
+                        <rect x="13.3333" y="14.9333" width="12" height="2.13333" rx="1.06667" fill="#FBFBFB"/>
+                        <rect x="6.66675" y="8.2666" width="18.6667" height="2.13333" rx="1.06667" fill="#FBFBFB"/>
+                    </svg>
+                </label>
+
+                <nav class="header-mob__menu">
+                    <ul class="header-mob__list">
+                        <li class="header-mob__item"><a href="#uslugi" class="header-mob__link">Наши услуги</a></li>
+                        <li class="header-mob__item"><a href="#process" class="header-mob__link">Процесс работы</a></li>
+                        <li class="header-mob__item"><a href="#application" class="header-mob__link">Оставить заявку</a></li>
+                    </ul>
+                    <a class="button button-white header-mob__button" href="#contacts">Контакты</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
     <section class="main">
         <div class="container main__container">
             <div class="main__ornamentbox"><img src="./img/ornament.svg" class="main__ornament" /></div>
@@ -58,9 +84,6 @@
                 </div>
             </div>
             <div class="main__right">
-                <img class="main__ellipse main__ellipse-1" src="./img/ellipse-3.svg"/>
-                <img class="main__ellipse main__ellipse-2" src="./img/ellipse-2.svg"/>
-                <img class="main__ellipse main__ellipse-3" src="./img/ellipse-1.svg"/>
                 <img class="main__img" src="./img/main.webp" />
             </div>
         </div>
@@ -175,11 +198,9 @@
     </section>
 
     <section class="contacts">
-        <div class="container">
+        <div class="container contacts__container">
             <div class="contacts__left">
-                <div class="title">
-                    <div class="title-bottom">Оставьте заявку</div>
-                </div>
+                <div class="title-bottom contacts__title">Оставьте заявку</div>
                 <div class="contacts__line"></div>
                 <div class="contacts__text">Мы сотрудничаем с большим колличетвом предприятий и частных лиц по все стране</div>
                 <ul class="contacts__items">
@@ -198,10 +219,29 @@
                         </div>
                     </li>
                 </ul>
+                <div class="contacts__line"></div>
+                <div class="contacts__socials">
+                    <div class="contacts__social"><img src="./img/wa.svg" /></div>
+                    <div class="contacts__social"><img src="./img/tg.svg" /></div>
+                </div>
             </div>
-            <div class="contacts__right"></div>
+            <div class="contacts__right">
+                <img src="./img/contacts.webp" />
+            </div>
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__logo"><img src="./img/altitude-logo.svg"/></div>
+            <div class="footer__text">Все права защищены. Перепечатка и любое использование материалов возможно только при наличии ссылки на первоисточник.</div>
+            <div class="footer__socials">
+                <div class="footer__social"><img src="./img/wa.svg" /></div>
+                <div class="footer__social"><img src="./img/tg.svg" /></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
