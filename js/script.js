@@ -3,8 +3,8 @@ const burgerCheckbox = document.querySelector('.header-mob__burger-checkbox');
 
 if (burgerCheckbox) {
     const headerlinks = document.querySelectorAll('.header-mob__link');
-    const headreLogo = document.querySelectorAll('.header-mob__link');
-    const links = [...headerlinks, ...headreLogo];
+    const headerButton = document.querySelectorAll('.header-mob__button');
+    const links = [...headerlinks, ...headerButton];
 
     burgerCheckbox.addEventListener('change', function () {
         if (this.checked) {
@@ -22,10 +22,10 @@ if (burgerCheckbox) {
     });
 }
 
-const headerLinks =  document.querySelectorAll('.header-mob__link[href^="#"]')
+const links =  document.querySelectorAll('a[href^="#"]')
 
-if (headerLinks.length) {
-    headerLinks.forEach(anchor => {
+if (links.length) {
+    links.forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
 

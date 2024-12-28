@@ -34,10 +34,15 @@
     line-height: 26px;
     color: var(--color-white-1);
     padding: 5px;
+    transition: .3s ease-in-out;
+}
+
+.header__nav li a:hover {
+    color: var(--color-green);
 }
 
 .header__button {
-    max-width: 119px;
+    max-width: 193px;
 }
 
 .header-mob {
@@ -56,6 +61,7 @@
 
     .header-mob__logo {
         height: 40px;
+        padding: 8px 0;
     }
 
     .header-mob__logo img {
@@ -67,6 +73,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 8px 16px;
+        width: 100%;
     }
 
     .header-mob__burger {
@@ -140,5 +147,10 @@
 
     .header-mob__burger-checkbox:checked ~ .header-mob__menu {
         transform: translateX(0);
+    }
+
+    .header-mob__button {
+        max-width: 197px;
+        align-self: center;
     }
 }

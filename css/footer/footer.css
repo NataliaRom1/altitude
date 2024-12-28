@@ -33,3 +33,40 @@
     display: flex;
     gap: 16px;
 }
+
+.footer__social svg {
+    color: var(--color-black);
+    transition: .3s ease-in-out;
+}
+
+.footer__wa:hover svg {
+    color: #2CB742;
+}
+
+.footer__tg:hover svg {
+    color: #61A8DE;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .footer {
+        background: transparent;
+    }
+
+    .footer .footer__container {
+        padding: 16px;
+        background-color: var(--color-black);
+        margin: 16px;
+        border-radius: 10px;
+        gap: 16px;
+        min-width: calc(328px - 32px);
+    }
+
+    .footer__text {
+        font-size: 7px;
+        line-height: 9px;
+    }
+    .footer__socials {
+        display: none;
+    }
+}
